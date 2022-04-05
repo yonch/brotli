@@ -7,8 +7,9 @@ package cbrotli
 
 // Inform golang build system that it should link brotli libraries.
 
+// NOTE: to enable statically linking, brotlidec and brotlienc should precede brotlicommon
+
 // #cgo LDFLAGS: -lbrotlidec
 // #cgo LDFLAGS: -lbrotlienc
-// NOTE: to enable statically linking, brotlidec and brotlienc should precede brotlicommon
 // #cgo LDFLAGS: -lbrotlicommon
 import "C"
